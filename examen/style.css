@@ -1,0 +1,94 @@
+/* Restablecer márgenes y relleno globalmente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('imagenes/img/fons.jpg');
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: red;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 100vh;
+}
+
+.image-container {
+    width: 100%;  
+    height: 589px;  
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: cover;
+}
+
+.stripe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.square-small {
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 2s; 
+}
+
+.square-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square-small:hover {
+    transform: rotate(360deg);
+}
+
+.piedefoto {
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
